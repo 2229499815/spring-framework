@@ -1,0 +1,764 @@
+./spring-aop/src/main/java/org/aopalliance/aop/Advice.java:public interface Advice {
+./spring-aop/src/main/java/org/aopalliance/intercept/ConstructorInterceptor.java:public interface ConstructorInterceptor extends Interceptor  {
+./spring-aop/src/main/java/org/aopalliance/intercept/ConstructorInvocation.java:public interface ConstructorInvocation extends Invocation {
+./spring-aop/src/main/java/org/aopalliance/intercept/Interceptor.java:public interface Interceptor extends Advice {
+./spring-aop/src/main/java/org/aopalliance/intercept/Invocation.java:public interface Invocation extends Joinpoint {
+./spring-aop/src/main/java/org/aopalliance/intercept/Joinpoint.java:public interface Joinpoint {
+./spring-aop/src/main/java/org/aopalliance/intercept/MethodInterceptor.java:public interface MethodInterceptor extends Interceptor {
+./spring-aop/src/main/java/org/aopalliance/intercept/MethodInvocation.java:public interface MethodInvocation extends Invocation {
+./spring-aop/src/main/java/org/springframework/aop/Advisor.java:public interface Advisor {
+./spring-aop/src/main/java/org/springframework/aop/AfterAdvice.java:public interface AfterAdvice extends Advice {
+./spring-aop/src/main/java/org/springframework/aop/AfterReturningAdvice.java:public interface AfterReturningAdvice extends AfterAdvice {
+./spring-aop/src/main/java/org/springframework/aop/aspectj/annotation/AspectJAdvisorFactory.java:public interface AspectJAdvisorFactory {
+./spring-aop/src/main/java/org/springframework/aop/aspectj/annotation/MetadataAwareAspectInstanceFactory.java:public interface MetadataAwareAspectInstanceFactory extends AspectInstanceFactory {
+./spring-aop/src/main/java/org/springframework/aop/aspectj/AspectInstanceFactory.java:public interface AspectInstanceFactory extends Ordered {
+./spring-aop/src/main/java/org/springframework/aop/aspectj/AspectJPrecedenceInformation.java:public interface AspectJPrecedenceInformation extends Ordered {
+./spring-aop/src/main/java/org/springframework/aop/aspectj/InstantiationModelAwarePointcutAdvisor.java:public interface InstantiationModelAwarePointcutAdvisor extends PointcutAdvisor {
+./spring-aop/src/main/java/org/springframework/aop/BeforeAdvice.java:public interface BeforeAdvice extends Advice {
+./spring-aop/src/main/java/org/springframework/aop/ClassFilter.java:public interface ClassFilter {
+./spring-aop/src/main/java/org/springframework/aop/DynamicIntroductionAdvice.java:public interface DynamicIntroductionAdvice extends Advice {
+./spring-aop/src/main/java/org/springframework/aop/framework/adapter/AdvisorAdapter.java:public interface AdvisorAdapter {
+./spring-aop/src/main/java/org/springframework/aop/framework/adapter/AdvisorAdapterRegistry.java:public interface AdvisorAdapterRegistry {
+./spring-aop/src/main/java/org/springframework/aop/framework/Advised.java:public interface Advised extends TargetClassAware {
+./spring-aop/src/main/java/org/springframework/aop/framework/AdvisedSupportListener.java:public interface AdvisedSupportListener {
+./spring-aop/src/main/java/org/springframework/aop/framework/AdvisorChainFactory.java:public interface AdvisorChainFactory {
+./spring-aop/src/main/java/org/springframework/aop/framework/AopInfrastructureBean.java:public interface AopInfrastructureBean {
+./spring-aop/src/main/java/org/springframework/aop/framework/AopProxy.java:public interface AopProxy {
+./spring-aop/src/main/java/org/springframework/aop/framework/AopProxyFactory.java:public interface AopProxyFactory {
+./spring-aop/src/main/java/org/springframework/aop/framework/autoproxy/TargetSourceCreator.java:public interface TargetSourceCreator {
+./spring-aop/src/main/java/org/springframework/aop/interceptor/AsyncUncaughtExceptionHandler.java:public interface AsyncUncaughtExceptionHandler {
+./spring-aop/src/main/java/org/springframework/aop/IntroductionAdvisor.java:public interface IntroductionAdvisor extends Advisor, IntroductionInfo {
+./spring-aop/src/main/java/org/springframework/aop/IntroductionAwareMethodMatcher.java:public interface IntroductionAwareMethodMatcher extends MethodMatcher {
+./spring-aop/src/main/java/org/springframework/aop/IntroductionInfo.java:public interface IntroductionInfo {
+./spring-aop/src/main/java/org/springframework/aop/IntroductionInterceptor.java:public interface IntroductionInterceptor extends MethodInterceptor, DynamicIntroductionAdvice {
+./spring-aop/src/main/java/org/springframework/aop/MethodBeforeAdvice.java:public interface MethodBeforeAdvice extends BeforeAdvice {
+./spring-aop/src/main/java/org/springframework/aop/MethodMatcher.java:public interface MethodMatcher {
+./spring-aop/src/main/java/org/springframework/aop/Pointcut.java:public interface Pointcut {
+./spring-aop/src/main/java/org/springframework/aop/PointcutAdvisor.java:public interface PointcutAdvisor extends Advisor {
+./spring-aop/src/main/java/org/springframework/aop/ProxyMethodInvocation.java:public interface ProxyMethodInvocation extends MethodInvocation {
+./spring-aop/src/main/java/org/springframework/aop/RawTargetAccess.java:public interface RawTargetAccess {
+./spring-aop/src/main/java/org/springframework/aop/scope/ScopedObject.java:public interface ScopedObject extends RawTargetAccess {
+./spring-aop/src/main/java/org/springframework/aop/SpringProxy.java:public interface SpringProxy {
+./spring-aop/src/main/java/org/springframework/aop/support/ExpressionPointcut.java:public interface ExpressionPointcut extends Pointcut {
+./spring-aop/src/main/java/org/springframework/aop/target/dynamic/Refreshable.java:public interface Refreshable {
+./spring-aop/src/main/java/org/springframework/aop/target/PoolingConfig.java:public interface PoolingConfig {
+./spring-aop/src/main/java/org/springframework/aop/target/ThreadLocalTargetSourceStats.java:public interface ThreadLocalTargetSourceStats {
+./spring-aop/src/main/java/org/springframework/aop/TargetClassAware.java:public interface TargetClassAware {
+./spring-aop/src/main/java/org/springframework/aop/TargetSource.java:public interface TargetSource extends TargetClassAware {
+./spring-aop/src/main/java/org/springframework/aop/ThrowsAdvice.java:public interface ThrowsAdvice extends AfterAdvice {
+
+}
+./spring-aspects/src/main/java/org/springframework/beans/factory/aspectj/ConfigurableObject.java:public interface ConfigurableObject {
+./spring-beans/src/main/java/org/springframework/beans/BeanInfoFactory.java:public interface BeanInfoFactory {
+./spring-beans/src/main/java/org/springframework/beans/BeanMetadataElement.java:public interface BeanMetadataElement {
+./spring-beans/src/main/java/org/springframework/beans/BeanWrapper.java:public interface BeanWrapper extends ConfigurablePropertyAccessor {
+./spring-beans/src/main/java/org/springframework/beans/ConfigurablePropertyAccessor.java:public interface ConfigurablePropertyAccessor extends PropertyAccessor, PropertyEditorRegistry, TypeConverter {
+./spring-beans/src/main/java/org/springframework/beans/factory/annotation/AnnotatedBeanDefinition.java:public interface AnnotatedBeanDefinition extends BeanDefinition {
+./spring-beans/src/main/java/org/springframework/beans/factory/Aware.java:public interface Aware {
+./spring-beans/src/main/java/org/springframework/beans/factory/BeanClassLoaderAware.java:public interface BeanClassLoaderAware extends Aware {
+./spring-beans/src/main/java/org/springframework/beans/factory/BeanFactory.java:public interface BeanFactory {
+./spring-beans/src/main/java/org/springframework/beans/factory/BeanFactoryAware.java:public interface BeanFactoryAware extends Aware {
+./spring-beans/src/main/java/org/springframework/beans/factory/BeanNameAware.java:public interface BeanNameAware extends Aware {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java:public interface AutowireCapableBeanFactory extends BeanFactory {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/BeanDefinition.java:public interface BeanDefinition extends AttributeAccessor, BeanMetadataElement {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/BeanDefinitionCustomizer.java:public interface BeanDefinitionCustomizer {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/BeanExpressionResolver.java:public interface BeanExpressionResolver {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/BeanFactoryPostProcessor.java:public interface BeanFactoryPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/BeanPostProcessor.java:public interface BeanPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/BeanReference.java:public interface BeanReference extends BeanMetadataElement {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/ConfigurableBeanFactory.java:public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, SingletonBeanRegistry {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/ConfigurableListableBeanFactory.java:public interface ConfigurableListableBeanFactory
+./spring-beans/src/main/java/org/springframework/beans/factory/config/DestructionAwareBeanPostProcessor.java:public interface DestructionAwareBeanPostProcessor extends BeanPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/InstantiationAwareBeanPostProcessor.java:public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/Scope.java:public interface Scope {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/SingletonBeanRegistry.java:public interface SingletonBeanRegistry {
+./spring-beans/src/main/java/org/springframework/beans/factory/config/SmartInstantiationAwareBeanPostProcessor.java:public interface SmartInstantiationAwareBeanPostProcessor extends InstantiationAwareBeanPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/DisposableBean.java:public interface DisposableBean {
+./spring-beans/src/main/java/org/springframework/beans/factory/FactoryBean.java:public interface FactoryBean<T> {
+./spring-beans/src/main/java/org/springframework/beans/factory/HierarchicalBeanFactory.java:public interface HierarchicalBeanFactory extends BeanFactory {
+./spring-beans/src/main/java/org/springframework/beans/factory/InitializingBean.java:public interface InitializingBean {
+./spring-beans/src/main/java/org/springframework/beans/factory/ListableBeanFactory.java:public interface ListableBeanFactory extends BeanFactory {
+./spring-beans/src/main/java/org/springframework/beans/factory/NamedBean.java:public interface NamedBean {
+./spring-beans/src/main/java/org/springframework/beans/factory/ObjectFactory.java:public interface ObjectFactory<T> {
+./spring-beans/src/main/java/org/springframework/beans/factory/ObjectProvider.java:public interface ObjectProvider<T> extends ObjectFactory<T>, Iterable<T> {
+./spring-beans/src/main/java/org/springframework/beans/factory/parsing/ComponentDefinition.java:public interface ComponentDefinition extends BeanMetadataElement {
+./spring-beans/src/main/java/org/springframework/beans/factory/parsing/DefaultsDefinition.java:public interface DefaultsDefinition extends BeanMetadataElement {
+./spring-beans/src/main/java/org/springframework/beans/factory/parsing/ProblemReporter.java:public interface ProblemReporter {
+./spring-beans/src/main/java/org/springframework/beans/factory/parsing/ReaderEventListener.java:public interface ReaderEventListener extends EventListener {
+./spring-beans/src/main/java/org/springframework/beans/factory/parsing/SourceExtractor.java:public interface SourceExtractor {
+./spring-beans/src/main/java/org/springframework/beans/factory/SmartFactoryBean.java:public interface SmartFactoryBean<T> extends FactoryBean<T> {
+./spring-beans/src/main/java/org/springframework/beans/factory/SmartInitializingSingleton.java:public interface SmartInitializingSingleton {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/AutowireCandidateResolver.java:public interface AutowireCandidateResolver {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReader.java:public interface BeanDefinitionReader {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionRegistry.java:public interface BeanDefinitionRegistry extends AliasRegistry {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionRegistryPostProcessor.java:public interface BeanDefinitionRegistryPostProcessor extends BeanFactoryPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/BeanNameGenerator.java:public interface BeanNameGenerator {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/InstantiationStrategy.java:public interface InstantiationStrategy {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/MergedBeanDefinitionPostProcessor.java:public interface MergedBeanDefinitionPostProcessor extends BeanPostProcessor {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/MethodReplacer.java:public interface MethodReplacer {
+./spring-beans/src/main/java/org/springframework/beans/factory/support/SecurityContextProvider.java:public interface SecurityContextProvider {
+./spring-beans/src/main/java/org/springframework/beans/factory/wiring/BeanWiringInfoResolver.java:public interface BeanWiringInfoResolver {
+./spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionDecorator.java:public interface BeanDefinitionDecorator {
+./spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionDocumentReader.java:public interface BeanDefinitionDocumentReader {
+./spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParser.java:public interface BeanDefinitionParser {
+./spring-beans/src/main/java/org/springframework/beans/factory/xml/DocumentLoader.java:public interface DocumentLoader {
+./spring-beans/src/main/java/org/springframework/beans/factory/xml/NamespaceHandler.java:public interface NamespaceHandler {
+./spring-beans/src/main/java/org/springframework/beans/factory/xml/NamespaceHandlerResolver.java:public interface NamespaceHandlerResolver {
+./spring-beans/src/main/java/org/springframework/beans/Mergeable.java:public interface Mergeable {
+./spring-beans/src/main/java/org/springframework/beans/PropertyAccessor.java:public interface PropertyAccessor {
+./spring-beans/src/main/java/org/springframework/beans/PropertyEditorRegistrar.java:public interface PropertyEditorRegistrar {
+./spring-beans/src/main/java/org/springframework/beans/PropertyEditorRegistry.java:public interface PropertyEditorRegistry {
+./spring-beans/src/main/java/org/springframework/beans/PropertyValues.java:public interface PropertyValues extends Iterable<PropertyValue> {
+./spring-beans/src/main/java/org/springframework/beans/support/SortDefinition.java:public interface SortDefinition {
+./spring-beans/src/main/java/org/springframework/beans/TypeConverter.java:public interface TypeConverter {
+
+}
+./spring-context/src/main/java/org/springframework/cache/annotation/CacheAnnotationParser.java:public interface CacheAnnotationParser {
+./spring-context/src/main/java/org/springframework/cache/annotation/CachingConfigurer.java:public interface CachingConfigurer {
+./spring-context/src/main/java/org/springframework/cache/Cache.java:public interface Cache {
+./spring-context/src/main/java/org/springframework/cache/CacheManager.java:public interface CacheManager {
+./spring-context/src/main/java/org/springframework/cache/interceptor/BasicOperation.java:public interface BasicOperation {
+./spring-context/src/main/java/org/springframework/cache/interceptor/CacheErrorHandler.java:public interface CacheErrorHandler {
+./spring-context/src/main/java/org/springframework/cache/interceptor/CacheOperationInvocationContext.java:public interface CacheOperationInvocationContext<O extends BasicOperation> {
+./spring-context/src/main/java/org/springframework/cache/interceptor/CacheOperationInvoker.java:public interface CacheOperationInvoker {
+./spring-context/src/main/java/org/springframework/cache/interceptor/CacheOperationSource.java:public interface CacheOperationSource {
+./spring-context/src/main/java/org/springframework/cache/interceptor/CacheResolver.java:public interface CacheResolver {
+
+}
+./spring-context/src/main/java/org/springframework/cache/interceptor/KeyGenerator.java:public interface KeyGenerator {
+./spring-context/src/main/java/org/springframework/context/annotation/AnnotationConfigRegistry.java:public interface AnnotationConfigRegistry {
+./spring-context/src/main/java/org/springframework/context/annotation/Condition.java:public interface Condition {
+./spring-context/src/main/java/org/springframework/context/annotation/ConditionContext.java:public interface ConditionContext {
+./spring-context/src/main/java/org/springframework/context/annotation/ConfigurationCondition.java:public interface ConfigurationCondition extends Condition {
+./spring-context/src/main/java/org/springframework/context/annotation/DeferredImportSelector.java:public interface DeferredImportSelector extends ImportSelector {
+./spring-context/src/main/java/org/springframework/context/annotation/ImportAware.java:public interface ImportAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/annotation/ImportBeanDefinitionRegistrar.java:public interface ImportBeanDefinitionRegistrar {
+./spring-context/src/main/java/org/springframework/context/annotation/ImportSelector.java:public interface ImportSelector {
+./spring-context/src/main/java/org/springframework/context/annotation/LoadTimeWeavingConfigurer.java:public interface LoadTimeWeavingConfigurer {
+./spring-context/src/main/java/org/springframework/context/annotation/ScopeMetadataResolver.java:public interface ScopeMetadataResolver {
+./spring-context/src/main/java/org/springframework/context/ApplicationContext.java:public interface ApplicationContext extends EnvironmentCapable, ListableBeanFactory, HierarchicalBeanFactory,
+./spring-context/src/main/java/org/springframework/context/ApplicationContextAware.java:public interface ApplicationContextAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/ApplicationContextInitializer.java:public interface ApplicationContextInitializer<C extends ConfigurableApplicationContext> {
+./spring-context/src/main/java/org/springframework/context/ApplicationEventPublisher.java:public interface ApplicationEventPublisher {
+./spring-context/src/main/java/org/springframework/context/ApplicationEventPublisherAware.java:public interface ApplicationEventPublisherAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/ApplicationListener.java:public interface ApplicationListener<E extends ApplicationEvent> extends EventListener {
+./spring-context/src/main/java/org/springframework/context/ApplicationStartupAware.java:public interface ApplicationStartupAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/ConfigurableApplicationContext.java:public interface ConfigurableApplicationContext extends ApplicationContext, Lifecycle, Closeable {
+./spring-context/src/main/java/org/springframework/context/EmbeddedValueResolverAware.java:public interface EmbeddedValueResolverAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/EnvironmentAware.java:public interface EnvironmentAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/event/ApplicationEventMulticaster.java:public interface ApplicationEventMulticaster {
+./spring-context/src/main/java/org/springframework/context/event/EventListenerFactory.java:public interface EventListenerFactory {
+./spring-context/src/main/java/org/springframework/context/event/GenericApplicationListener.java:public interface GenericApplicationListener extends SmartApplicationListener {
+./spring-context/src/main/java/org/springframework/context/event/SmartApplicationListener.java:public interface SmartApplicationListener extends ApplicationListener<ApplicationEvent>, Ordered {
+./spring-context/src/main/java/org/springframework/context/HierarchicalMessageSource.java:public interface HierarchicalMessageSource extends MessageSource {
+./spring-context/src/main/java/org/springframework/context/i18n/LocaleContext.java:public interface LocaleContext {
+./spring-context/src/main/java/org/springframework/context/i18n/TimeZoneAwareLocaleContext.java:public interface TimeZoneAwareLocaleContext extends LocaleContext {
+./spring-context/src/main/java/org/springframework/context/Lifecycle.java:public interface Lifecycle {
+./spring-context/src/main/java/org/springframework/context/LifecycleProcessor.java:public interface LifecycleProcessor extends Lifecycle {
+./spring-context/src/main/java/org/springframework/context/MessageSource.java:public interface MessageSource {
+./spring-context/src/main/java/org/springframework/context/MessageSourceAware.java:public interface MessageSourceAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/MessageSourceResolvable.java:public interface MessageSourceResolvable {
+./spring-context/src/main/java/org/springframework/context/Phased.java:public interface Phased {
+./spring-context/src/main/java/org/springframework/context/ResourceLoaderAware.java:public interface ResourceLoaderAware extends Aware {
+./spring-context/src/main/java/org/springframework/context/SmartLifecycle.java:public interface SmartLifecycle extends Lifecycle, Phased {
+./spring-context/src/main/java/org/springframework/context/support/LiveBeansViewMBean.java:public interface LiveBeansViewMBean {
+
+}
+./spring-context/src/main/java/org/springframework/context/weaving/LoadTimeWeaverAware.java:public interface LoadTimeWeaverAware extends Aware {
+./spring-context/src/main/java/org/springframework/format/AnnotationFormatterFactory.java:public interface AnnotationFormatterFactory<A extends Annotation> {
+./spring-context/src/main/java/org/springframework/format/Formatter.java:public interface Formatter<T> extends Printer<T>, Parser<T> {
+./spring-context/src/main/java/org/springframework/format/FormatterRegistrar.java:public interface FormatterRegistrar {
+./spring-context/src/main/java/org/springframework/format/FormatterRegistry.java:public interface FormatterRegistry extends ConverterRegistry {
+./spring-context/src/main/java/org/springframework/format/Parser.java:public interface Parser<T> {
+./spring-context/src/main/java/org/springframework/format/Printer.java:public interface Printer<T> {
+./spring-context/src/main/java/org/springframework/instrument/classloading/LoadTimeWeaver.java:public interface LoadTimeWeaver {
+./spring-context/src/main/java/org/springframework/jmx/export/assembler/AutodetectCapableMBeanInfoAssembler.java:public interface AutodetectCapableMBeanInfoAssembler extends MBeanInfoAssembler {
+./spring-context/src/main/java/org/springframework/jmx/export/assembler/MBeanInfoAssembler.java:public interface MBeanInfoAssembler {
+./spring-context/src/main/java/org/springframework/jmx/export/MBeanExporterListener.java:public interface MBeanExporterListener {
+./spring-context/src/main/java/org/springframework/jmx/export/MBeanExportOperations.java:public interface MBeanExportOperations {
+./spring-context/src/main/java/org/springframework/jmx/export/metadata/JmxAttributeSource.java:public interface JmxAttributeSource {
+./spring-context/src/main/java/org/springframework/jmx/export/naming/ObjectNamingStrategy.java:public interface ObjectNamingStrategy {
+./spring-context/src/main/java/org/springframework/jmx/export/naming/SelfNaming.java:public interface SelfNaming {
+./spring-context/src/main/java/org/springframework/jmx/export/notification/NotificationPublisher.java:public interface NotificationPublisher {
+./spring-context/src/main/java/org/springframework/jmx/export/notification/NotificationPublisherAware.java:public interface NotificationPublisherAware extends Aware {
+./spring-context/src/main/java/org/springframework/jndi/JndiCallback.java:public interface JndiCallback<T> {
+./spring-context/src/main/java/org/springframework/remoting/rmi/RmiInvocationHandler.java:public interface RmiInvocationHandler extends Remote {
+./spring-context/src/main/java/org/springframework/remoting/support/RemoteInvocationExecutor.java:public interface RemoteInvocationExecutor {
+./spring-context/src/main/java/org/springframework/remoting/support/RemoteInvocationFactory.java:public interface RemoteInvocationFactory {
+./spring-context/src/main/java/org/springframework/scheduling/annotation/AsyncConfigurer.java:public interface AsyncConfigurer {
+./spring-context/src/main/java/org/springframework/scheduling/annotation/SchedulingConfigurer.java:public interface SchedulingConfigurer {
+./spring-context/src/main/java/org/springframework/scheduling/config/ScheduledTaskHolder.java:public interface ScheduledTaskHolder {
+./spring-context/src/main/java/org/springframework/scheduling/SchedulingAwareRunnable.java:public interface SchedulingAwareRunnable extends Runnable {
+./spring-context/src/main/java/org/springframework/scheduling/SchedulingTaskExecutor.java:public interface SchedulingTaskExecutor extends AsyncTaskExecutor {
+./spring-context/src/main/java/org/springframework/scheduling/TaskScheduler.java:public interface TaskScheduler {
+./spring-context/src/main/java/org/springframework/scheduling/Trigger.java:public interface Trigger {
+./spring-context/src/main/java/org/springframework/scheduling/TriggerContext.java:public interface TriggerContext {
+./spring-context/src/main/java/org/springframework/scripting/groovy/GroovyObjectCustomizer.java:public interface GroovyObjectCustomizer {
+./spring-context/src/main/java/org/springframework/scripting/ScriptEvaluator.java:public interface ScriptEvaluator {
+./spring-context/src/main/java/org/springframework/scripting/ScriptFactory.java:public interface ScriptFactory {
+./spring-context/src/main/java/org/springframework/scripting/ScriptSource.java:public interface ScriptSource {
+./spring-context/src/main/java/org/springframework/ui/context/HierarchicalThemeSource.java:public interface HierarchicalThemeSource extends ThemeSource {
+./spring-context/src/main/java/org/springframework/ui/context/Theme.java:public interface Theme {
+./spring-context/src/main/java/org/springframework/ui/context/ThemeSource.java:public interface ThemeSource {
+./spring-context/src/main/java/org/springframework/ui/Model.java:public interface Model {
+./spring-context/src/main/java/org/springframework/validation/BindingErrorProcessor.java:public interface BindingErrorProcessor {
+./spring-context/src/main/java/org/springframework/validation/BindingResult.java:public interface BindingResult extends Errors {
+./spring-context/src/main/java/org/springframework/validation/Errors.java:public interface Errors {
+./spring-context/src/main/java/org/springframework/validation/MessageCodeFormatter.java:public interface MessageCodeFormatter {
+./spring-context/src/main/java/org/springframework/validation/MessageCodesResolver.java:public interface MessageCodesResolver {
+./spring-context/src/main/java/org/springframework/validation/SmartValidator.java:public interface SmartValidator extends Validator {
+./spring-context/src/main/java/org/springframework/validation/Validator.java:public interface Validator {
+./spring-context-support/src/main/java/org/springframework/cache/jcache/config/JCacheConfigurer.java:public interface JCacheConfigurer extends CachingConfigurer {
+./spring-context-support/src/main/java/org/springframework/cache/jcache/interceptor/JCacheOperation.java:public interface JCacheOperation<A extends Annotation> extends BasicOperation, CacheMethodDetails<A> {
+./spring-context-support/src/main/java/org/springframework/cache/jcache/interceptor/JCacheOperationSource.java:public interface JCacheOperationSource {
+./spring-context-support/src/main/java/org/springframework/mail/javamail/JavaMailSender.java:public interface JavaMailSender extends MailSender {
+./spring-context-support/src/main/java/org/springframework/mail/javamail/MimeMessagePreparator.java:public interface MimeMessagePreparator {
+./spring-context-support/src/main/java/org/springframework/mail/MailMessage.java:public interface MailMessage {
+./spring-context-support/src/main/java/org/springframework/mail/MailSender.java:public interface MailSender {
+./spring-context-support/src/main/java/org/springframework/scheduling/quartz/SchedulerContextAware.java:public interface SchedulerContextAware extends Aware {
+./spring-core/src/main/java/org/springframework/asm/Opcodes.java:public interface Opcodes {
+./spring-core/src/main/java/org/springframework/core/AliasRegistry.java:public interface AliasRegistry {
+./spring-core/src/main/java/org/springframework/core/annotation/AnnotationFilter.java:public interface AnnotationFilter {
+./spring-core/src/main/java/org/springframework/core/annotation/MergedAnnotation.java:public interface MergedAnnotation<A extends Annotation> {
+./spring-core/src/main/java/org/springframework/core/annotation/MergedAnnotations.java:public interface MergedAnnotations extends Iterable<MergedAnnotation<Annotation>> {
+./spring-core/src/main/java/org/springframework/core/annotation/MergedAnnotationSelector.java:public interface MergedAnnotationSelector<A extends Annotation> {
+./spring-core/src/main/java/org/springframework/core/annotation/SynthesizedAnnotation.java:public interface SynthesizedAnnotation {
+./spring-core/src/main/java/org/springframework/core/AttributeAccessor.java:public interface AttributeAccessor {
+./spring-core/src/main/java/org/springframework/core/codec/Decoder.java:public interface Decoder<T> {
+./spring-core/src/main/java/org/springframework/core/codec/Encoder.java:public interface Encoder<T> {
+./spring-core/src/main/java/org/springframework/core/convert/ConversionService.java:public interface ConversionService {
+./spring-core/src/main/java/org/springframework/core/convert/converter/ConditionalConverter.java:public interface ConditionalConverter {
+./spring-core/src/main/java/org/springframework/core/convert/converter/ConditionalGenericConverter.java:public interface ConditionalGenericConverter extends GenericConverter, ConditionalConverter {
+./spring-core/src/main/java/org/springframework/core/convert/converter/Converter.java:public interface Converter<S, T> {
+./spring-core/src/main/java/org/springframework/core/convert/converter/ConverterFactory.java:public interface ConverterFactory<S, R> {
+./spring-core/src/main/java/org/springframework/core/convert/converter/ConverterRegistry.java:public interface ConverterRegistry {
+./spring-core/src/main/java/org/springframework/core/convert/converter/GenericConverter.java:public interface GenericConverter {
+./spring-core/src/main/java/org/springframework/core/convert/support/ConfigurableConversionService.java:public interface ConfigurableConversionService extends ConversionService, ConverterRegistry {
+./spring-core/src/main/java/org/springframework/core/DecoratingProxy.java:public interface DecoratingProxy {
+./spring-core/src/main/java/org/springframework/core/env/ConfigurableEnvironment.java:public interface ConfigurableEnvironment extends Environment, ConfigurablePropertyResolver {
+./spring-core/src/main/java/org/springframework/core/env/ConfigurablePropertyResolver.java:public interface ConfigurablePropertyResolver extends PropertyResolver {
+./spring-core/src/main/java/org/springframework/core/env/Environment.java:public interface Environment extends PropertyResolver {
+./spring-core/src/main/java/org/springframework/core/env/EnvironmentCapable.java:public interface EnvironmentCapable {
+./spring-core/src/main/java/org/springframework/core/env/Profiles.java:public interface Profiles {
+./spring-core/src/main/java/org/springframework/core/env/PropertyResolver.java:public interface PropertyResolver {
+./spring-core/src/main/java/org/springframework/core/env/PropertySources.java:public interface PropertySources extends Iterable<PropertySource<?>> {
+./spring-core/src/main/java/org/springframework/core/InfrastructureProxy.java:public interface InfrastructureProxy {
+./spring-core/src/main/java/org/springframework/core/io/buffer/DataBuffer.java:public interface DataBuffer {
+./spring-core/src/main/java/org/springframework/core/io/buffer/DataBufferFactory.java:public interface DataBufferFactory {
+./spring-core/src/main/java/org/springframework/core/io/buffer/PooledDataBuffer.java:public interface PooledDataBuffer extends DataBuffer {
+./spring-core/src/main/java/org/springframework/core/io/ContextResource.java:public interface ContextResource extends Resource {
+./spring-core/src/main/java/org/springframework/core/io/InputStreamSource.java:public interface InputStreamSource {
+./spring-core/src/main/java/org/springframework/core/io/ProtocolResolver.java:public interface ProtocolResolver {
+./spring-core/src/main/java/org/springframework/core/io/Resource.java:public interface Resource extends InputStreamSource {
+./spring-core/src/main/java/org/springframework/core/io/ResourceLoader.java:public interface ResourceLoader {
+./spring-core/src/main/java/org/springframework/core/io/support/PropertySourceFactory.java:public interface PropertySourceFactory {
+./spring-core/src/main/java/org/springframework/core/io/support/ResourcePatternResolver.java:public interface ResourcePatternResolver extends ResourceLoader {
+./spring-core/src/main/java/org/springframework/core/io/WritableResource.java:public interface WritableResource extends Resource {
+./spring-core/src/main/java/org/springframework/core/metrics/ApplicationStartup.java:public interface ApplicationStartup {
+./spring-core/src/main/java/org/springframework/core/metrics/StartupStep.java:public interface StartupStep {
+./spring-core/src/main/java/org/springframework/core/Ordered.java:public interface Ordered {
+./spring-core/src/main/java/org/springframework/core/ParameterNameDiscoverer.java:public interface ParameterNameDiscoverer {
+./spring-core/src/main/java/org/springframework/core/PriorityOrdered.java:public interface PriorityOrdered extends Ordered {
+./spring-core/src/main/java/org/springframework/core/ResolvableTypeProvider.java:public interface ResolvableTypeProvider {
+./spring-core/src/main/java/org/springframework/core/serializer/Deserializer.java:public interface Deserializer<T> {
+./spring-core/src/main/java/org/springframework/core/serializer/Serializer.java:public interface Serializer<T> {
+./spring-core/src/main/java/org/springframework/core/SmartClassLoader.java:public interface SmartClassLoader {
+./spring-core/src/main/java/org/springframework/core/style/ToStringStyler.java:public interface ToStringStyler {
+./spring-core/src/main/java/org/springframework/core/style/ValueStyler.java:public interface ValueStyler {
+./spring-core/src/main/java/org/springframework/core/task/AsyncListenableTaskExecutor.java:public interface AsyncListenableTaskExecutor extends AsyncTaskExecutor {
+./spring-core/src/main/java/org/springframework/core/task/AsyncTaskExecutor.java:public interface AsyncTaskExecutor extends TaskExecutor {
+./spring-core/src/main/java/org/springframework/core/task/TaskDecorator.java:public interface TaskDecorator {
+./spring-core/src/main/java/org/springframework/core/task/TaskExecutor.java:public interface TaskExecutor extends Executor {
+./spring-core/src/main/java/org/springframework/core/type/AnnotatedTypeMetadata.java:public interface AnnotatedTypeMetadata {
+./spring-core/src/main/java/org/springframework/core/type/AnnotationMetadata.java:public interface AnnotationMetadata extends ClassMetadata, AnnotatedTypeMetadata {
+./spring-core/src/main/java/org/springframework/core/type/ClassMetadata.java:public interface ClassMetadata {
+./spring-core/src/main/java/org/springframework/core/type/classreading/MetadataReader.java:public interface MetadataReader {
+./spring-core/src/main/java/org/springframework/core/type/classreading/MetadataReaderFactory.java:public interface MetadataReaderFactory {
+./spring-core/src/main/java/org/springframework/core/type/filter/TypeFilter.java:public interface TypeFilter {
+./spring-core/src/main/java/org/springframework/core/type/MethodMetadata.java:public interface MethodMetadata extends AnnotatedTypeMetadata {
+./spring-core/src/main/java/org/springframework/util/backoff/BackOff.java:public interface BackOff {
+./spring-core/src/main/java/org/springframework/util/backoff/BackOffExecution.java:public interface BackOffExecution {
+./spring-core/src/main/java/org/springframework/util/concurrent/FailureCallback.java:public interface FailureCallback {
+./spring-core/src/main/java/org/springframework/util/concurrent/ListenableFuture.java:public interface ListenableFuture<T> extends Future<T> {
+./spring-core/src/main/java/org/springframework/util/concurrent/ListenableFutureCallback.java:public interface ListenableFutureCallback<T> extends SuccessCallback<T>, FailureCallback {
+./spring-core/src/main/java/org/springframework/util/concurrent/SuccessCallback.java:public interface SuccessCallback<T> {
+./spring-core/src/main/java/org/springframework/util/ErrorHandler.java:public interface ErrorHandler {
+./spring-core/src/main/java/org/springframework/util/IdGenerator.java:public interface IdGenerator {
+./spring-core/src/main/java/org/springframework/util/MultiValueMap.java:public interface MultiValueMap<K, V> extends Map<K, List<V>> {
+./spring-core/src/main/java/org/springframework/util/PathMatcher.java:public interface PathMatcher {
+./spring-core/src/main/java/org/springframework/util/PropertiesPersister.java:public interface PropertiesPersister {
+./spring-core/src/main/java/org/springframework/util/RouteMatcher.java:public interface RouteMatcher {
+./spring-core/src/main/java/org/springframework/util/StringValueResolver.java:public interface StringValueResolver {
+./spring-expression/src/main/java/org/springframework/expression/BeanResolver.java:public interface BeanResolver {
+./spring-expression/src/main/java/org/springframework/expression/ConstructorExecutor.java:public interface ConstructorExecutor {
+./spring-expression/src/main/java/org/springframework/expression/ConstructorResolver.java:public interface ConstructorResolver {
+./spring-expression/src/main/java/org/springframework/expression/EvaluationContext.java:public interface EvaluationContext {
+./spring-expression/src/main/java/org/springframework/expression/Expression.java:public interface Expression {
+./spring-expression/src/main/java/org/springframework/expression/ExpressionParser.java:public interface ExpressionParser {
+./spring-expression/src/main/java/org/springframework/expression/MethodExecutor.java:public interface MethodExecutor {
+./spring-expression/src/main/java/org/springframework/expression/MethodFilter.java:public interface MethodFilter {
+./spring-expression/src/main/java/org/springframework/expression/MethodResolver.java:public interface MethodResolver {
+./spring-expression/src/main/java/org/springframework/expression/OperatorOverloader.java:public interface OperatorOverloader {
+./spring-expression/src/main/java/org/springframework/expression/ParserContext.java:public interface ParserContext {
+./spring-expression/src/main/java/org/springframework/expression/PropertyAccessor.java:public interface PropertyAccessor {
+./spring-expression/src/main/java/org/springframework/expression/spel/ast/ValueRef.java:public interface ValueRef {
+./spring-expression/src/main/java/org/springframework/expression/spel/CompilablePropertyAccessor.java:public interface CompilablePropertyAccessor extends PropertyAccessor, Opcodes {
+./spring-expression/src/main/java/org/springframework/expression/spel/SpelNode.java:public interface SpelNode {
+./spring-expression/src/main/java/org/springframework/expression/TypeComparator.java:public interface TypeComparator {
+./spring-expression/src/main/java/org/springframework/expression/TypeConverter.java:public interface TypeConverter {
+./spring-expression/src/main/java/org/springframework/expression/TypeLocator.java:public interface TypeLocator {
+./spring-jcl/src/main/java/org/apache/commons/logging/Log.java:public interface Log {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/BatchPreparedStatementSetter.java:public interface BatchPreparedStatementSetter {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/CallableStatementCallback.java:public interface CallableStatementCallback<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/CallableStatementCreator.java:public interface CallableStatementCreator {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/ConnectionCallback.java:public interface ConnectionCallback<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/DisposableSqlTypeValue.java:public interface DisposableSqlTypeValue extends SqlTypeValue {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/InterruptibleBatchPreparedStatementSetter.java:public interface InterruptibleBatchPreparedStatementSetter extends BatchPreparedStatementSetter {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/JdbcOperations.java:public interface JdbcOperations {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/metadata/CallMetaDataProvider.java:public interface CallMetaDataProvider {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/metadata/TableMetaDataProvider.java:public interface TableMetaDataProvider {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/namedparam/NamedParameterJdbcOperations.java:public interface NamedParameterJdbcOperations {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/namedparam/SqlParameterSource.java:public interface SqlParameterSource {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/ParameterDisposer.java:public interface ParameterDisposer {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/ParameterizedPreparedStatementSetter.java:public interface ParameterizedPreparedStatementSetter<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/ParameterMapper.java:public interface ParameterMapper {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/PreparedStatementCallback.java:public interface PreparedStatementCallback<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/PreparedStatementCreator.java:public interface PreparedStatementCreator {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/PreparedStatementSetter.java:public interface PreparedStatementSetter {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/ResultSetExtractor.java:public interface ResultSetExtractor<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/RowCallbackHandler.java:public interface RowCallbackHandler {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/RowMapper.java:public interface RowMapper<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/simple/SimpleJdbcCallOperations.java:public interface SimpleJdbcCallOperations {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/simple/SimpleJdbcInsertOperations.java:public interface SimpleJdbcInsertOperations {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlProvider.java:public interface SqlProvider {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlReturnType.java:public interface SqlReturnType {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlTypeValue.java:public interface SqlTypeValue {
+./spring-jdbc/src/main/java/org/springframework/jdbc/core/StatementCallback.java:public interface StatementCallback<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/ConnectionHandle.java:public interface ConnectionHandle {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/ConnectionProxy.java:public interface ConnectionProxy extends Connection {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ConnectionProperties.java:public interface ConnectionProperties {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/DataSourceFactory.java:public interface DataSourceFactory {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/EmbeddedDatabase.java:public interface EmbeddedDatabase extends DataSource {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseConfigurer.java:public interface EmbeddedDatabaseConfigurer {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/init/DatabasePopulator.java:public interface DatabasePopulator {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/lookup/DataSourceLookup.java:public interface DataSourceLookup {
+./spring-jdbc/src/main/java/org/springframework/jdbc/datasource/SmartDataSource.java:public interface SmartDataSource extends DataSource {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/DatabaseMetaDataCallback.java:public interface DatabaseMetaDataCallback<T> {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/incrementer/DataFieldMaxValueIncrementer.java:public interface DataFieldMaxValueIncrementer {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/KeyHolder.java:public interface KeyHolder {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/lob/LobCreator.java:public interface LobCreator extends Closeable {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/lob/LobHandler.java:public interface LobHandler {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/rowset/SqlRowSet.java:public interface SqlRowSet extends Serializable {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/rowset/SqlRowSetMetaData.java:public interface SqlRowSetMetaData {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionTranslator.java:public interface SQLExceptionTranslator {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/SqlValue.java:public interface SqlValue {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/SqlXmlHandler.java:public interface SqlXmlHandler {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/SqlXmlValue.java:public interface SqlXmlValue extends SqlValue {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/XmlBinaryStreamProvider.java:public interface XmlBinaryStreamProvider {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/XmlCharacterStreamProvider.java:public interface XmlCharacterStreamProvider {
+./spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/XmlResultProvider.java:public interface XmlResultProvider {
+./spring-jms/src/main/java/org/springframework/jms/annotation/JmsListenerConfigurer.java:public interface JmsListenerConfigurer {
+./spring-jms/src/main/java/org/springframework/jms/config/JmsListenerContainerFactory.java:public interface JmsListenerContainerFactory<C extends MessageListenerContainer> {
+./spring-jms/src/main/java/org/springframework/jms/config/JmsListenerEndpoint.java:public interface JmsListenerEndpoint {
+./spring-jms/src/main/java/org/springframework/jms/connection/SessionProxy.java:public interface SessionProxy extends Session {
+./spring-jms/src/main/java/org/springframework/jms/connection/SmartConnectionFactory.java:public interface SmartConnectionFactory extends ConnectionFactory {
+./spring-jms/src/main/java/org/springframework/jms/core/BrowserCallback.java:public interface BrowserCallback<T> {
+./spring-jms/src/main/java/org/springframework/jms/core/JmsMessageOperations.java:public interface JmsMessageOperations extends MessageSendingOperations<Destination>,
+./spring-jms/src/main/java/org/springframework/jms/core/JmsOperations.java:public interface JmsOperations {
+./spring-jms/src/main/java/org/springframework/jms/core/MessageCreator.java:public interface MessageCreator {
+./spring-jms/src/main/java/org/springframework/jms/core/MessagePostProcessor.java:public interface MessagePostProcessor {
+./spring-jms/src/main/java/org/springframework/jms/core/ProducerCallback.java:public interface ProducerCallback<T> {
+./spring-jms/src/main/java/org/springframework/jms/core/SessionCallback.java:public interface SessionCallback<T> {
+./spring-jms/src/main/java/org/springframework/jms/listener/endpoint/JmsActivationSpecFactory.java:public interface JmsActivationSpecFactory {
+./spring-jms/src/main/java/org/springframework/jms/listener/MessageListenerContainer.java:public interface MessageListenerContainer extends SmartLifecycle {
+./spring-jms/src/main/java/org/springframework/jms/listener/SessionAwareMessageListener.java:public interface SessionAwareMessageListener<M extends Message> {
+./spring-jms/src/main/java/org/springframework/jms/listener/SubscriptionNameProvider.java:public interface SubscriptionNameProvider {
+./spring-jms/src/main/java/org/springframework/jms/support/converter/MessageConverter.java:public interface MessageConverter {
+./spring-jms/src/main/java/org/springframework/jms/support/converter/SmartMessageConverter.java:public interface SmartMessageConverter extends MessageConverter {
+./spring-jms/src/main/java/org/springframework/jms/support/destination/CachingDestinationResolver.java:public interface CachingDestinationResolver extends DestinationResolver {
+./spring-jms/src/main/java/org/springframework/jms/support/destination/DestinationResolver.java:public interface DestinationResolver {
+./spring-jms/src/main/java/org/springframework/jms/support/JmsHeaderMapper.java:public interface JmsHeaderMapper extends HeaderMapper<Message> {
+./spring-jms/src/main/java/org/springframework/jms/support/JmsHeaders.java:public interface JmsHeaders {
+./spring-messaging/src/main/java/org/springframework/messaging/converter/ContentTypeResolver.java:public interface ContentTypeResolver {
+./spring-messaging/src/main/java/org/springframework/messaging/converter/MessageConverter.java:public interface MessageConverter {
+./spring-messaging/src/main/java/org/springframework/messaging/converter/SmartMessageConverter.java:public interface SmartMessageConverter extends MessageConverter {
+./spring-messaging/src/main/java/org/springframework/messaging/core/DestinationResolver.java:public interface DestinationResolver<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/core/DestinationResolvingMessageReceivingOperations.java:public interface DestinationResolvingMessageReceivingOperations<D> extends MessageReceivingOperations<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/core/DestinationResolvingMessageRequestReplyOperations.java:public interface DestinationResolvingMessageRequestReplyOperations<D> extends MessageRequestReplyOperations<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/core/DestinationResolvingMessageSendingOperations.java:public interface DestinationResolvingMessageSendingOperations<D> extends MessageSendingOperations<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/core/MessagePostProcessor.java:public interface MessagePostProcessor {
+./spring-messaging/src/main/java/org/springframework/messaging/core/MessageReceivingOperations.java:public interface MessageReceivingOperations<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/core/MessageRequestReplyOperations.java:public interface MessageRequestReplyOperations<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/core/MessageSendingOperations.java:public interface MessageSendingOperations<D> {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/annotation/support/MessageHandlerMethodFactory.java:public interface MessageHandlerMethodFactory {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/annotation/ValueConstants.java:public interface ValueConstants {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/invocation/AsyncHandlerMethodReturnValueHandler.java:public interface AsyncHandlerMethodReturnValueHandler extends HandlerMethodReturnValueHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver.java:public interface HandlerMethodArgumentResolver {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler.java:public interface HandlerMethodReturnValueHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/invocation/reactive/HandlerMethodArgumentResolver.java:public interface HandlerMethodArgumentResolver {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/invocation/reactive/HandlerMethodReturnValueHandler.java:public interface HandlerMethodReturnValueHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/invocation/reactive/SyncHandlerMethodArgumentResolver.java:public interface SyncHandlerMethodArgumentResolver extends HandlerMethodArgumentResolver {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/MessageCondition.java:public interface MessageCondition<T> {
+./spring-messaging/src/main/java/org/springframework/messaging/handler/MessagingAdviceBean.java:public interface MessagingAdviceBean extends Ordered {
+./spring-messaging/src/main/java/org/springframework/messaging/Message.java:public interface Message<T> {
+./spring-messaging/src/main/java/org/springframework/messaging/MessageChannel.java:public interface MessageChannel {
+./spring-messaging/src/main/java/org/springframework/messaging/MessageHandler.java:public interface MessageHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/PollableChannel.java:public interface PollableChannel extends MessageChannel {
+./spring-messaging/src/main/java/org/springframework/messaging/ReactiveMessageHandler.java:public interface ReactiveMessageHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/rsocket/MetadataExtractor.java:public interface MetadataExtractor {
+./spring-messaging/src/main/java/org/springframework/messaging/rsocket/MetadataExtractorRegistry.java:public interface MetadataExtractorRegistry {
+./spring-messaging/src/main/java/org/springframework/messaging/rsocket/RSocketConnectorConfigurer.java:public interface RSocketConnectorConfigurer {
+./spring-messaging/src/main/java/org/springframework/messaging/rsocket/RSocketRequester.java:public interface RSocketRequester {
+./spring-messaging/src/main/java/org/springframework/messaging/rsocket/RSocketStrategies.java:public interface RSocketStrategies {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/broker/SubscriptionRegistry.java:public interface SubscriptionRegistry {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/SimpMessageSendingOperations.java:public interface SimpMessageSendingOperations extends MessageSendingOperations<String> {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/stomp/ConnectionHandlingStompSession.java:public interface ConnectionHandlingStompSession extends StompSession, StompTcpConnectionHandler<byte[]> {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/stomp/StompFrameHandler.java:public interface StompFrameHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/stomp/StompSession.java:public interface StompSession {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/stomp/StompSessionHandler.java:public interface StompSessionHandler extends StompFrameHandler {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/stomp/StompTcpConnectionHandler.java:public interface StompTcpConnectionHandler<P> extends TcpConnectionHandler<P> {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/DestinationUserNameProvider.java:public interface DestinationUserNameProvider {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/SimpSession.java:public interface SimpSession {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/SimpSubscription.java:public interface SimpSubscription {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/SimpSubscriptionMatcher.java:public interface SimpSubscriptionMatcher {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/SimpUser.java:public interface SimpUser {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/SimpUserRegistry.java:public interface SimpUserRegistry {
+./spring-messaging/src/main/java/org/springframework/messaging/simp/user/UserDestinationResolver.java:public interface UserDestinationResolver {
+./spring-messaging/src/main/java/org/springframework/messaging/SubscribableChannel.java:public interface SubscribableChannel extends MessageChannel {
+./spring-messaging/src/main/java/org/springframework/messaging/support/ChannelInterceptor.java:public interface ChannelInterceptor {
+./spring-messaging/src/main/java/org/springframework/messaging/support/ExecutorChannelInterceptor.java:public interface ExecutorChannelInterceptor extends ChannelInterceptor {
+./spring-messaging/src/main/java/org/springframework/messaging/support/HeaderMapper.java:public interface HeaderMapper<T> {
+./spring-messaging/src/main/java/org/springframework/messaging/support/InterceptableChannel.java:public interface InterceptableChannel {
+./spring-messaging/src/main/java/org/springframework/messaging/support/MessageHandlingRunnable.java:public interface MessageHandlingRunnable extends Runnable {
+./spring-messaging/src/main/java/org/springframework/messaging/support/MessageHeaderInitializer.java:public interface MessageHeaderInitializer {
+./spring-messaging/src/main/java/org/springframework/messaging/tcp/reactor/ReactorNettyCodec.java:public interface ReactorNettyCodec<P> {
+./spring-messaging/src/main/java/org/springframework/messaging/tcp/ReconnectStrategy.java:public interface ReconnectStrategy {
+./spring-messaging/src/main/java/org/springframework/messaging/tcp/TcpConnection.java:public interface TcpConnection<P> extends Closeable {
+./spring-messaging/src/main/java/org/springframework/messaging/tcp/TcpConnectionHandler.java:public interface TcpConnectionHandler<P> {
+./spring-messaging/src/main/java/org/springframework/messaging/tcp/TcpOperations.java:public interface TcpOperations<P> {
+./spring-orm/src/main/java/org/springframework/orm/hibernate5/HibernateCallback.java:public interface HibernateCallback<T> {
+./spring-orm/src/main/java/org/springframework/orm/hibernate5/HibernateOperations.java:public interface HibernateOperations {
+./spring-orm/src/main/java/org/springframework/orm/jpa/EntityManagerFactoryInfo.java:public interface EntityManagerFactoryInfo {
+./spring-orm/src/main/java/org/springframework/orm/jpa/EntityManagerProxy.java:public interface EntityManagerProxy extends EntityManager {
+./spring-orm/src/main/java/org/springframework/orm/jpa/JpaDialect.java:public interface JpaDialect extends PersistenceExceptionTranslator {
+./spring-orm/src/main/java/org/springframework/orm/jpa/JpaVendorAdapter.java:public interface JpaVendorAdapter {
+./spring-orm/src/main/java/org/springframework/orm/jpa/persistenceunit/PersistenceUnitManager.java:public interface PersistenceUnitManager {
+./spring-orm/src/main/java/org/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor.java:public interface PersistenceUnitPostProcessor {
+./spring-orm/src/main/java/org/springframework/orm/jpa/persistenceunit/SmartPersistenceUnitInfo.java:public interface SmartPersistenceUnitInfo extends PersistenceUnitInfo {
+./spring-oxm/src/main/java/org/springframework/oxm/GenericMarshaller.java:public interface GenericMarshaller extends Marshaller {
+./spring-oxm/src/main/java/org/springframework/oxm/GenericUnmarshaller.java:public interface GenericUnmarshaller extends Unmarshaller {
+./spring-oxm/src/main/java/org/springframework/oxm/Marshaller.java:public interface Marshaller {
+./spring-oxm/src/main/java/org/springframework/oxm/mime/MimeContainer.java:public interface MimeContainer {
+./spring-oxm/src/main/java/org/springframework/oxm/mime/MimeMarshaller.java:public interface MimeMarshaller extends Marshaller {
+./spring-oxm/src/main/java/org/springframework/oxm/mime/MimeUnmarshaller.java:public interface MimeUnmarshaller extends Unmarshaller {
+./spring-oxm/src/main/java/org/springframework/oxm/Unmarshaller.java:public interface Unmarshaller {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/connection/init/DatabasePopulator.java:public interface DatabasePopulator {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/connection/lookup/ConnectionFactoryLookup.java:public interface ConnectionFactoryLookup {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/binding/BindMarker.java:public interface BindMarker {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/binding/BindMarkers.java:public interface BindMarkers {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/binding/BindMarkersFactory.java:public interface BindMarkersFactory {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/binding/BindTarget.java:public interface BindTarget {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/ConnectionAccessor.java:public interface ConnectionAccessor {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/DatabaseClient.java:public interface DatabaseClient extends ConnectionAccessor {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/ExecuteFunction.java:public interface ExecuteFunction {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/FetchSpec.java:public interface FetchSpec<T> extends RowsFetchSpec<T>, UpdatedRowsFetchSpec {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/PreparedOperation.java:public interface PreparedOperation<T> extends QueryOperation {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/QueryOperation.java:public interface QueryOperation extends Supplier<String> {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/RowsFetchSpec.java:public interface RowsFetchSpec<T> {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/SqlProvider.java:public interface SqlProvider {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/StatementFilterFunction.java:public interface StatementFilterFunction {
+./spring-r2dbc/src/main/java/org/springframework/r2dbc/core/UpdatedRowsFetchSpec.java:public interface UpdatedRowsFetchSpec {
+./spring-test/src/main/java/org/springframework/test/annotation/ProfileValueSource.java:public interface ProfileValueSource {
+./spring-test/src/main/java/org/springframework/test/context/ActiveProfilesResolver.java:public interface ActiveProfilesResolver {
+./spring-test/src/main/java/org/springframework/test/context/BootstrapContext.java:public interface BootstrapContext {
+./spring-test/src/main/java/org/springframework/test/context/cache/ContextCache.java:public interface ContextCache {
+./spring-test/src/main/java/org/springframework/test/context/CacheAwareContextLoaderDelegate.java:public interface CacheAwareContextLoaderDelegate {
+./spring-test/src/main/java/org/springframework/test/context/ContextCustomizer.java:public interface ContextCustomizer {
+./spring-test/src/main/java/org/springframework/test/context/ContextCustomizerFactory.java:public interface ContextCustomizerFactory {
+./spring-test/src/main/java/org/springframework/test/context/ContextLoader.java:public interface ContextLoader {
+./spring-test/src/main/java/org/springframework/test/context/DynamicPropertyRegistry.java:public interface DynamicPropertyRegistry {
+./spring-test/src/main/java/org/springframework/test/context/event/ApplicationEvents.java:public interface ApplicationEvents {
+./spring-test/src/main/java/org/springframework/test/context/SmartContextLoader.java:public interface SmartContextLoader extends ContextLoader {
+./spring-test/src/main/java/org/springframework/test/context/support/PropertyProvider.java:public interface PropertyProvider {
+./spring-test/src/main/java/org/springframework/test/context/TestContext.java:public interface TestContext extends AttributeAccessor, Serializable {
+./spring-test/src/main/java/org/springframework/test/context/TestContextBootstrapper.java:public interface TestContextBootstrapper {
+./spring-test/src/main/java/org/springframework/test/context/TestExecutionListener.java:public interface TestExecutionListener {
+./spring-test/src/main/java/org/springframework/test/web/client/RequestExpectation.java:public interface RequestExpectation extends ResponseActions, RequestMatcher, ResponseCreator {
+./spring-test/src/main/java/org/springframework/test/web/client/RequestExpectationManager.java:public interface RequestExpectationManager {
+./spring-test/src/main/java/org/springframework/test/web/client/RequestMatcher.java:public interface RequestMatcher {
+./spring-test/src/main/java/org/springframework/test/web/client/ResponseActions.java:public interface ResponseActions {
+./spring-test/src/main/java/org/springframework/test/web/client/ResponseCreator.java:public interface ResponseCreator {
+./spring-test/src/main/java/org/springframework/test/web/reactive/server/MockServerClientHttpResponse.java:public interface MockServerClientHttpResponse extends ClientHttpResponse {
+./spring-test/src/main/java/org/springframework/test/web/reactive/server/MockServerConfigurer.java:public interface MockServerConfigurer {
+./spring-test/src/main/java/org/springframework/test/web/reactive/server/WebTestClient.java:public interface WebTestClient {
+./spring-test/src/main/java/org/springframework/test/web/reactive/server/WebTestClientConfigurer.java:public interface WebTestClientConfigurer {
+./spring-test/src/main/java/org/springframework/test/web/servlet/client/MockMvcWebTestClient.java:public interface MockMvcWebTestClient {
+./spring-test/src/main/java/org/springframework/test/web/servlet/DispatcherServletCustomizer.java:public interface DispatcherServletCustomizer {
+./spring-test/src/main/java/org/springframework/test/web/servlet/htmlunit/WebRequestMatcher.java:public interface WebRequestMatcher {
+./spring-test/src/main/java/org/springframework/test/web/servlet/MockMvcBuilder.java:public interface MockMvcBuilder {
+./spring-test/src/main/java/org/springframework/test/web/servlet/MvcResult.java:public interface MvcResult {
+./spring-test/src/main/java/org/springframework/test/web/servlet/request/ConfigurableSmartRequestBuilder.java:public interface ConfigurableSmartRequestBuilder<B extends ConfigurableSmartRequestBuilder<B>>
+./spring-test/src/main/java/org/springframework/test/web/servlet/request/RequestPostProcessor.java:public interface RequestPostProcessor {
+./spring-test/src/main/java/org/springframework/test/web/servlet/RequestBuilder.java:public interface RequestBuilder {
+./spring-test/src/main/java/org/springframework/test/web/servlet/ResultActions.java:public interface ResultActions {
+./spring-test/src/main/java/org/springframework/test/web/servlet/ResultHandler.java:public interface ResultHandler {
+./spring-test/src/main/java/org/springframework/test/web/servlet/ResultMatcher.java:public interface ResultMatcher {
+./spring-test/src/main/java/org/springframework/test/web/servlet/setup/ConfigurableMockMvcBuilder.java:public interface ConfigurableMockMvcBuilder<B extends ConfigurableMockMvcBuilder<B>> extends MockMvcBuilder {
+./spring-test/src/main/java/org/springframework/test/web/servlet/setup/MockMvcConfigurer.java:public interface MockMvcConfigurer {
+./spring-test/src/main/java/org/springframework/test/web/servlet/SmartRequestBuilder.java:public interface SmartRequestBuilder extends RequestBuilder {
+./spring-tx/src/main/java/org/springframework/dao/support/PersistenceExceptionTranslator.java:public interface PersistenceExceptionTranslator {
+./spring-tx/src/main/java/org/springframework/jca/cci/core/CciOperations.java:public interface CciOperations {
+./spring-tx/src/main/java/org/springframework/jca/cci/core/ConnectionCallback.java:public interface ConnectionCallback<T> {
+./spring-tx/src/main/java/org/springframework/jca/cci/core/InteractionCallback.java:public interface InteractionCallback<T> {
+./spring-tx/src/main/java/org/springframework/jca/cci/core/RecordCreator.java:public interface RecordCreator {
+./spring-tx/src/main/java/org/springframework/jca/cci/core/RecordExtractor.java:public interface RecordExtractor<T> {
+./spring-tx/src/main/java/org/springframework/jca/context/BootstrapContextAware.java:public interface BootstrapContextAware extends Aware {
+./spring-tx/src/main/java/org/springframework/transaction/annotation/TransactionAnnotationParser.java:public interface TransactionAnnotationParser {
+./spring-tx/src/main/java/org/springframework/transaction/annotation/TransactionManagementConfigurer.java:public interface TransactionManagementConfigurer {
+./spring-tx/src/main/java/org/springframework/transaction/event/TransactionalApplicationListener.java:public interface TransactionalApplicationListener<E extends ApplicationEvent>
+./spring-tx/src/main/java/org/springframework/transaction/interceptor/TransactionalProxy.java:public interface TransactionalProxy extends SpringProxy {
+./spring-tx/src/main/java/org/springframework/transaction/interceptor/TransactionAttribute.java:public interface TransactionAttribute extends TransactionDefinition {
+./spring-tx/src/main/java/org/springframework/transaction/interceptor/TransactionAttributeSource.java:public interface TransactionAttributeSource {
+./spring-tx/src/main/java/org/springframework/transaction/jta/TransactionFactory.java:public interface TransactionFactory {
+./spring-tx/src/main/java/org/springframework/transaction/PlatformTransactionManager.java:public interface PlatformTransactionManager extends TransactionManager {
+./spring-tx/src/main/java/org/springframework/transaction/reactive/TransactionalOperator.java:public interface TransactionalOperator {
+./spring-tx/src/main/java/org/springframework/transaction/reactive/TransactionCallback.java:public interface TransactionCallback<T> {
+./spring-tx/src/main/java/org/springframework/transaction/reactive/TransactionSynchronization.java:public interface TransactionSynchronization {
+./spring-tx/src/main/java/org/springframework/transaction/ReactiveTransaction.java:public interface ReactiveTransaction extends TransactionExecution {
+./spring-tx/src/main/java/org/springframework/transaction/ReactiveTransactionManager.java:public interface ReactiveTransactionManager extends TransactionManager {
+./spring-tx/src/main/java/org/springframework/transaction/SavepointManager.java:public interface SavepointManager {
+./spring-tx/src/main/java/org/springframework/transaction/support/CallbackPreferringPlatformTransactionManager.java:public interface CallbackPreferringPlatformTransactionManager extends PlatformTransactionManager {
+./spring-tx/src/main/java/org/springframework/transaction/support/ResourceHolder.java:public interface ResourceHolder {
+./spring-tx/src/main/java/org/springframework/transaction/support/ResourceTransactionDefinition.java:public interface ResourceTransactionDefinition extends TransactionDefinition {
+./spring-tx/src/main/java/org/springframework/transaction/support/ResourceTransactionManager.java:public interface ResourceTransactionManager extends PlatformTransactionManager {
+./spring-tx/src/main/java/org/springframework/transaction/support/SmartTransactionObject.java:public interface SmartTransactionObject extends Flushable {
+./spring-tx/src/main/java/org/springframework/transaction/support/TransactionCallback.java:public interface TransactionCallback<T> {
+./spring-tx/src/main/java/org/springframework/transaction/support/TransactionOperations.java:public interface TransactionOperations {
+./spring-tx/src/main/java/org/springframework/transaction/support/TransactionSynchronization.java:public interface TransactionSynchronization extends Ordered, Flushable {
+./spring-tx/src/main/java/org/springframework/transaction/TransactionDefinition.java:public interface TransactionDefinition {
+./spring-tx/src/main/java/org/springframework/transaction/TransactionExecution.java:public interface TransactionExecution {
+./spring-tx/src/main/java/org/springframework/transaction/TransactionManager.java:public interface TransactionManager {
+./spring-tx/src/main/java/org/springframework/transaction/TransactionStatus.java:public interface TransactionStatus extends TransactionExecution, SavepointManager, Flushable {
+./spring-web/src/main/java/org/springframework/http/client/AsyncClientHttpRequest.java:public interface AsyncClientHttpRequest extends HttpRequest, HttpOutputMessage {
+./spring-web/src/main/java/org/springframework/http/client/AsyncClientHttpRequestExecution.java:public interface AsyncClientHttpRequestExecution {
+./spring-web/src/main/java/org/springframework/http/client/AsyncClientHttpRequestFactory.java:public interface AsyncClientHttpRequestFactory {
+./spring-web/src/main/java/org/springframework/http/client/AsyncClientHttpRequestInterceptor.java:public interface AsyncClientHttpRequestInterceptor {
+./spring-web/src/main/java/org/springframework/http/client/ClientHttpRequest.java:public interface ClientHttpRequest extends HttpRequest, HttpOutputMessage {
+./spring-web/src/main/java/org/springframework/http/client/ClientHttpRequestExecution.java:public interface ClientHttpRequestExecution {
+./spring-web/src/main/java/org/springframework/http/client/ClientHttpRequestFactory.java:public interface ClientHttpRequestFactory {
+./spring-web/src/main/java/org/springframework/http/client/ClientHttpRequestInitializer.java:public interface ClientHttpRequestInitializer {
+./spring-web/src/main/java/org/springframework/http/client/ClientHttpRequestInterceptor.java:public interface ClientHttpRequestInterceptor {
+./spring-web/src/main/java/org/springframework/http/client/ClientHttpResponse.java:public interface ClientHttpResponse extends HttpInputMessage, Closeable {
+./spring-web/src/main/java/org/springframework/http/client/reactive/ClientHttpConnector.java:public interface ClientHttpConnector {
+./spring-web/src/main/java/org/springframework/http/client/reactive/ClientHttpRequest.java:public interface ClientHttpRequest extends ReactiveHttpOutputMessage {
+./spring-web/src/main/java/org/springframework/http/client/reactive/ClientHttpResponse.java:public interface ClientHttpResponse extends ReactiveHttpInputMessage {
+./spring-web/src/main/java/org/springframework/http/codec/ClientCodecConfigurer.java:public interface ClientCodecConfigurer extends CodecConfigurer {
+./spring-web/src/main/java/org/springframework/http/codec/CodecConfigurer.java:public interface CodecConfigurer {
+./spring-web/src/main/java/org/springframework/http/codec/HttpMessageDecoder.java:public interface HttpMessageDecoder<T> extends Decoder<T> {
+./spring-web/src/main/java/org/springframework/http/codec/HttpMessageEncoder.java:public interface HttpMessageEncoder<T> extends Encoder<T> {
+./spring-web/src/main/java/org/springframework/http/codec/HttpMessageReader.java:public interface HttpMessageReader<T> {
+./spring-web/src/main/java/org/springframework/http/codec/HttpMessageWriter.java:public interface HttpMessageWriter<T> {
+./spring-web/src/main/java/org/springframework/http/codec/multipart/FilePart.java:public interface FilePart extends Part {
+./spring-web/src/main/java/org/springframework/http/codec/multipart/FormFieldPart.java:public interface FormFieldPart extends Part {
+./spring-web/src/main/java/org/springframework/http/codec/multipart/Part.java:public interface Part {
+./spring-web/src/main/java/org/springframework/http/codec/ServerCodecConfigurer.java:public interface ServerCodecConfigurer extends CodecConfigurer {
+./spring-web/src/main/java/org/springframework/http/converter/GenericHttpMessageConverter.java:public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> {
+./spring-web/src/main/java/org/springframework/http/converter/HttpMessageConverter.java:public interface HttpMessageConverter<T> {
+./spring-web/src/main/java/org/springframework/http/converter/protobuf/ExtensionRegistryInitializer.java:public interface ExtensionRegistryInitializer {
+./spring-web/src/main/java/org/springframework/http/HttpInputMessage.java:public interface HttpInputMessage extends HttpMessage {
+./spring-web/src/main/java/org/springframework/http/HttpMessage.java:public interface HttpMessage {
+./spring-web/src/main/java/org/springframework/http/HttpOutputMessage.java:public interface HttpOutputMessage extends HttpMessage {
+./spring-web/src/main/java/org/springframework/http/HttpRequest.java:public interface HttpRequest extends HttpMessage {
+./spring-web/src/main/java/org/springframework/http/ReactiveHttpInputMessage.java:public interface ReactiveHttpInputMessage extends HttpMessage {
+./spring-web/src/main/java/org/springframework/http/ReactiveHttpOutputMessage.java:public interface ReactiveHttpOutputMessage extends HttpMessage {
+./spring-web/src/main/java/org/springframework/http/server/PathContainer.java:public interface PathContainer {
+./spring-web/src/main/java/org/springframework/http/server/reactive/HttpHandler.java:public interface HttpHandler {
+./spring-web/src/main/java/org/springframework/http/server/reactive/HttpHandlerDecoratorFactory.java:public interface HttpHandlerDecoratorFactory extends Function<HttpHandler, HttpHandler> {
+./spring-web/src/main/java/org/springframework/http/server/reactive/ServerHttpRequest.java:public interface ServerHttpRequest extends HttpRequest, ReactiveHttpInputMessage {
+./spring-web/src/main/java/org/springframework/http/server/reactive/ServerHttpResponse.java:public interface ServerHttpResponse extends ReactiveHttpOutputMessage {
+./spring-web/src/main/java/org/springframework/http/server/reactive/SslInfo.java:public interface SslInfo {
+./spring-web/src/main/java/org/springframework/http/server/RequestPath.java:public interface RequestPath extends PathContainer {
+./spring-web/src/main/java/org/springframework/http/server/ServerHttpAsyncRequestControl.java:public interface ServerHttpAsyncRequestControl {
+./spring-web/src/main/java/org/springframework/http/server/ServerHttpRequest.java:public interface ServerHttpRequest extends HttpRequest, HttpInputMessage {
+./spring-web/src/main/java/org/springframework/http/server/ServerHttpResponse.java:public interface ServerHttpResponse extends HttpOutputMessage, Flushable, Closeable {
+./spring-web/src/main/java/org/springframework/http/StreamingHttpOutputMessage.java:public interface StreamingHttpOutputMessage extends HttpOutputMessage {
+./spring-web/src/main/java/org/springframework/http/ZeroCopyHttpOutputMessage.java:public interface ZeroCopyHttpOutputMessage extends ReactiveHttpOutputMessage {
+./spring-web/src/main/java/org/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration.java:public interface HttpInvokerClientConfiguration {
+./spring-web/src/main/java/org/springframework/remoting/httpinvoker/HttpInvokerRequestExecutor.java:public interface HttpInvokerRequestExecutor {
+./spring-web/src/main/java/org/springframework/web/accept/ContentNegotiationStrategy.java:public interface ContentNegotiationStrategy {
+./spring-web/src/main/java/org/springframework/web/accept/MediaTypeFileExtensionResolver.java:public interface MediaTypeFileExtensionResolver {
+./spring-web/src/main/java/org/springframework/web/bind/annotation/ValueConstants.java:public interface ValueConstants {
+./spring-web/src/main/java/org/springframework/web/bind/support/SessionAttributeStore.java:public interface SessionAttributeStore {
+./spring-web/src/main/java/org/springframework/web/bind/support/SessionStatus.java:public interface SessionStatus {
+./spring-web/src/main/java/org/springframework/web/bind/support/WebArgumentResolver.java:public interface WebArgumentResolver {
+./spring-web/src/main/java/org/springframework/web/bind/support/WebBindingInitializer.java:public interface WebBindingInitializer {
+./spring-web/src/main/java/org/springframework/web/bind/support/WebDataBinderFactory.java:public interface WebDataBinderFactory {
+./spring-web/src/main/java/org/springframework/web/client/AsyncRequestCallback.java:public interface AsyncRequestCallback {
+./spring-web/src/main/java/org/springframework/web/client/AsyncRestOperations.java:public interface AsyncRestOperations {
+./spring-web/src/main/java/org/springframework/web/client/RequestCallback.java:public interface RequestCallback {
+./spring-web/src/main/java/org/springframework/web/client/ResponseErrorHandler.java:public interface ResponseErrorHandler {
+./spring-web/src/main/java/org/springframework/web/client/ResponseExtractor.java:public interface ResponseExtractor<T> {
+./spring-web/src/main/java/org/springframework/web/client/RestOperations.java:public interface RestOperations {
+./spring-web/src/main/java/org/springframework/web/context/ConfigurableWebApplicationContext.java:public interface ConfigurableWebApplicationContext extends WebApplicationContext, ConfigurableApplicationContext {
+./spring-web/src/main/java/org/springframework/web/context/ConfigurableWebEnvironment.java:public interface ConfigurableWebEnvironment extends ConfigurableEnvironment {
+./spring-web/src/main/java/org/springframework/web/context/request/async/AsyncWebRequest.java:public interface AsyncWebRequest extends NativeWebRequest {
+./spring-web/src/main/java/org/springframework/web/context/request/async/CallableProcessingInterceptor.java:public interface CallableProcessingInterceptor {
+./spring-web/src/main/java/org/springframework/web/context/request/async/DeferredResultProcessingInterceptor.java:public interface DeferredResultProcessingInterceptor {
+./spring-web/src/main/java/org/springframework/web/context/request/AsyncWebRequestInterceptor.java:public interface AsyncWebRequestInterceptor extends WebRequestInterceptor{
+./spring-web/src/main/java/org/springframework/web/context/request/NativeWebRequest.java:public interface NativeWebRequest extends WebRequest {
+./spring-web/src/main/java/org/springframework/web/context/request/RequestAttributes.java:public interface RequestAttributes {
+./spring-web/src/main/java/org/springframework/web/context/request/WebRequest.java:public interface WebRequest extends RequestAttributes {
+./spring-web/src/main/java/org/springframework/web/context/request/WebRequestInterceptor.java:public interface WebRequestInterceptor {
+./spring-web/src/main/java/org/springframework/web/context/ServletConfigAware.java:public interface ServletConfigAware extends Aware {
+./spring-web/src/main/java/org/springframework/web/context/ServletContextAware.java:public interface ServletContextAware extends Aware {
+./spring-web/src/main/java/org/springframework/web/context/WebApplicationContext.java:public interface WebApplicationContext extends ApplicationContext {
+./spring-web/src/main/java/org/springframework/web/cors/CorsConfigurationSource.java:public interface CorsConfigurationSource {
+./spring-web/src/main/java/org/springframework/web/cors/CorsProcessor.java:public interface CorsProcessor {
+./spring-web/src/main/java/org/springframework/web/cors/reactive/CorsConfigurationSource.java:public interface CorsConfigurationSource {
+./spring-web/src/main/java/org/springframework/web/cors/reactive/CorsProcessor.java:public interface CorsProcessor {
+./spring-web/src/main/java/org/springframework/web/cors/reactive/PreFlightRequestHandler.java:public interface PreFlightRequestHandler {
+./spring-web/src/main/java/org/springframework/web/HttpRequestHandler.java:public interface HttpRequestHandler {
+./spring-web/src/main/java/org/springframework/web/method/support/AsyncHandlerMethodReturnValueHandler.java:public interface AsyncHandlerMethodReturnValueHandler extends HandlerMethodReturnValueHandler {
+./spring-web/src/main/java/org/springframework/web/method/support/HandlerMethodArgumentResolver.java:public interface HandlerMethodArgumentResolver {
+./spring-web/src/main/java/org/springframework/web/method/support/HandlerMethodReturnValueHandler.java:public interface HandlerMethodReturnValueHandler {
+./spring-web/src/main/java/org/springframework/web/method/support/UriComponentsContributor.java:public interface UriComponentsContributor {
+./spring-web/src/main/java/org/springframework/web/multipart/MultipartFile.java:public interface MultipartFile extends InputStreamSource {
+./spring-web/src/main/java/org/springframework/web/multipart/MultipartHttpServletRequest.java:public interface MultipartHttpServletRequest extends HttpServletRequest, MultipartRequest {
+./spring-web/src/main/java/org/springframework/web/multipart/MultipartRequest.java:public interface MultipartRequest {
+./spring-web/src/main/java/org/springframework/web/multipart/MultipartResolver.java:public interface MultipartResolver {
+./spring-web/src/main/java/org/springframework/web/server/i18n/LocaleContextResolver.java:public interface LocaleContextResolver {
+./spring-web/src/main/java/org/springframework/web/server/ServerWebExchange.java:public interface ServerWebExchange {
+./spring-web/src/main/java/org/springframework/web/server/session/WebSessionIdResolver.java:public interface WebSessionIdResolver {
+./spring-web/src/main/java/org/springframework/web/server/session/WebSessionManager.java:public interface WebSessionManager {
+./spring-web/src/main/java/org/springframework/web/server/session/WebSessionStore.java:public interface WebSessionStore {
+./spring-web/src/main/java/org/springframework/web/server/WebExceptionHandler.java:public interface WebExceptionHandler {
+./spring-web/src/main/java/org/springframework/web/server/WebFilter.java:public interface WebFilter {
+./spring-web/src/main/java/org/springframework/web/server/WebFilterChain.java:public interface WebFilterChain {
+./spring-web/src/main/java/org/springframework/web/server/WebHandler.java:public interface WebHandler {
+./spring-web/src/main/java/org/springframework/web/server/WebSession.java:public interface WebSession {
+./spring-web/src/main/java/org/springframework/web/util/UriBuilder.java:public interface UriBuilder {
+./spring-web/src/main/java/org/springframework/web/util/UriBuilderFactory.java:public interface UriBuilderFactory extends UriTemplateHandler {
+./spring-web/src/main/java/org/springframework/web/util/UriTemplateHandler.java:public interface UriTemplateHandler {
+./spring-web/src/main/java/org/springframework/web/WebApplicationInitializer.java:public interface WebApplicationInitializer {
+./spring-webflux/src/main/java/org/springframework/web/reactive/accept/RequestedContentTypeResolver.java:public interface RequestedContentTypeResolver {
+./spring-webflux/src/main/java/org/springframework/web/reactive/config/WebFluxConfigurer.java:public interface WebFluxConfigurer {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/BodyExtractor.java:public interface BodyExtractor<T, M extends ReactiveHttpInputMessage> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/BodyInserter.java:public interface BodyInserter<T, M extends ReactiveHttpOutputMessage> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ClientRequest.java:public interface ClientRequest {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ClientResponse.java:public interface ClientResponse {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ExchangeFilterFunction.java:public interface ExchangeFilterFunction {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ExchangeFunction.java:public interface ExchangeFunction {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ExchangeStrategies.java:public interface ExchangeStrategies {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/client/WebClient.java:public interface WebClient {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/EntityResponse.java:public interface EntityResponse<T> extends ServerResponse {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/HandlerFilterFunction.java:public interface HandlerFilterFunction<T extends ServerResponse, R extends ServerResponse> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/HandlerFunction.java:public interface HandlerFunction<T extends ServerResponse> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/HandlerStrategies.java:public interface HandlerStrategies {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/RenderingResponse.java:public interface RenderingResponse extends ServerResponse {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/RequestPredicate.java:public interface RequestPredicate {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/RouterFunction.java:public interface RouterFunction<T extends ServerResponse> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/ServerRequest.java:public interface ServerRequest {
+./spring-webflux/src/main/java/org/springframework/web/reactive/function/server/ServerResponse.java:public interface ServerResponse {
+./spring-webflux/src/main/java/org/springframework/web/reactive/HandlerAdapter.java:public interface HandlerAdapter {
+./spring-webflux/src/main/java/org/springframework/web/reactive/HandlerMapping.java:public interface HandlerMapping {
+./spring-webflux/src/main/java/org/springframework/web/reactive/HandlerResultHandler.java:public interface HandlerResultHandler {
+./spring-webflux/src/main/java/org/springframework/web/reactive/resource/HttpResource.java:public interface HttpResource extends Resource {
+./spring-webflux/src/main/java/org/springframework/web/reactive/resource/ResourceResolver.java:public interface ResourceResolver {
+./spring-webflux/src/main/java/org/springframework/web/reactive/resource/ResourceResolverChain.java:public interface ResourceResolverChain {
+./spring-webflux/src/main/java/org/springframework/web/reactive/resource/ResourceTransformer.java:public interface ResourceTransformer {
+./spring-webflux/src/main/java/org/springframework/web/reactive/resource/ResourceTransformerChain.java:public interface ResourceTransformerChain {
+./spring-webflux/src/main/java/org/springframework/web/reactive/resource/VersionStrategy.java:public interface VersionStrategy {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/condition/MediaTypeExpression.java:public interface MediaTypeExpression {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/condition/NameValueExpression.java:public interface NameValueExpression<T> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/condition/RequestCondition.java:public interface RequestCondition<T> {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/method/HandlerMethodArgumentResolver.java:public interface HandlerMethodArgumentResolver {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/method/SyncHandlerMethodArgumentResolver.java:public interface SyncHandlerMethodArgumentResolver extends HandlerMethodArgumentResolver {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/view/freemarker/FreeMarkerConfig.java:public interface FreeMarkerConfig {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/view/Rendering.java:public interface Rendering {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/view/RequestDataValueProcessor.java:public interface RequestDataValueProcessor {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/view/script/ScriptTemplateConfig.java:public interface ScriptTemplateConfig {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/view/View.java:public interface View {
+./spring-webflux/src/main/java/org/springframework/web/reactive/result/view/ViewResolver.java:public interface ViewResolver {
+./spring-webflux/src/main/java/org/springframework/web/reactive/socket/client/WebSocketClient.java:public interface WebSocketClient {
+./spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/RequestUpgradeStrategy.java:public interface RequestUpgradeStrategy {
+./spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/WebSocketService.java:public interface WebSocketService {
+./spring-webflux/src/main/java/org/springframework/web/reactive/socket/WebSocketHandler.java:public interface WebSocketHandler {
+./spring-webflux/src/main/java/org/springframework/web/reactive/socket/WebSocketSession.java:public interface WebSocketSession {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/AsyncHandlerInterceptor.java:public interface AsyncHandlerInterceptor extends HandlerInterceptor {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java:public interface WebMvcConfigurer {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/FlashMapManager.java:public interface FlashMapManager {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/AsyncServerResponse.java:public interface AsyncServerResponse extends ServerResponse {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/EntityResponse.java:public interface EntityResponse<T> extends ServerResponse {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/HandlerFilterFunction.java:public interface HandlerFilterFunction<T extends ServerResponse, R extends ServerResponse> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/HandlerFunction.java:public interface HandlerFunction<T extends ServerResponse> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/RenderingResponse.java:public interface RenderingResponse extends ServerResponse {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/RequestPredicate.java:public interface RequestPredicate {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/RouterFunction.java:public interface RouterFunction<T extends ServerResponse> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/ServerRequest.java:public interface ServerRequest {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/function/ServerResponse.java:public interface ServerResponse {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/handler/HandlerMethodMappingNamingStrategy.java:public interface HandlerMethodMappingNamingStrategy<T> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/handler/MatchableHandlerMapping.java:public interface MatchableHandlerMapping extends HandlerMapping {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerAdapter.java:public interface HandlerAdapter {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExceptionResolver.java:public interface HandlerExceptionResolver {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerInterceptor.java:public interface HandlerInterceptor {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerMapping.java:public interface HandlerMapping {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/LocaleContextResolver.java:public interface LocaleContextResolver extends LocaleResolver {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/LocaleResolver.java:public interface LocaleResolver {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/annotation/ModelAndViewResolver.java:public interface ModelAndViewResolver {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/condition/MediaTypeExpression.java:public interface MediaTypeExpression {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/condition/NameValueExpression.java:public interface NameValueExpression<T> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/condition/RequestCondition.java:public interface RequestCondition<T> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/Controller.java:public interface Controller {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/LastModified.java:public interface LastModified {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestBodyAdvice.java:public interface RequestBodyAdvice {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/ResponseBodyAdvice.java:public interface ResponseBodyAdvice<T> {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/StreamingResponseBody.java:public interface StreamingResponseBody {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/support/RedirectAttributes.java:public interface RedirectAttributes extends Model {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/RequestToViewNameTranslator.java:public interface RequestToViewNameTranslator {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/HttpResource.java:public interface HttpResource extends Resource {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolver.java:public interface ResourceResolver {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceResolverChain.java:public interface ResourceResolverChain {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceTransformer.java:public interface ResourceTransformer {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceTransformerChain.java:public interface ResourceTransformerChain {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/VersionPathStrategy.java:public interface VersionPathStrategy {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/resource/VersionStrategy.java:public interface VersionStrategy extends VersionPathStrategy {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/SmartView.java:public interface SmartView extends View {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/support/RequestDataValueProcessor.java:public interface RequestDataValueProcessor {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/tags/ArgumentAware.java:public interface ArgumentAware {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/tags/EditorAwareTag.java:public interface EditorAwareTag {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/tags/ParamAware.java:public interface ParamAware {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/ThemeResolver.java:public interface ThemeResolver {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/view/freemarker/FreeMarkerConfig.java:public interface FreeMarkerConfig {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/view/groovy/GroovyMarkupConfig.java:public interface GroovyMarkupConfig {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/view/script/ScriptTemplateConfig.java:public interface ScriptTemplateConfig {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/View.java:public interface View {
+./spring-webmvc/src/main/java/org/springframework/web/servlet/ViewResolver.java:public interface ViewResolver {
+./spring-websocket/src/main/java/org/springframework/web/socket/adapter/NativeWebSocketSession.java:public interface NativeWebSocketSession extends WebSocketSession {
+./spring-websocket/src/main/java/org/springframework/web/socket/client/WebSocketClient.java:public interface WebSocketClient {
+./spring-websocket/src/main/java/org/springframework/web/socket/config/annotation/StompEndpointRegistry.java:public interface StompEndpointRegistry {
+./spring-websocket/src/main/java/org/springframework/web/socket/config/annotation/StompWebSocketEndpointRegistration.java:public interface StompWebSocketEndpointRegistration {
+./spring-websocket/src/main/java/org/springframework/web/socket/config/annotation/WebSocketConfigurer.java:public interface WebSocketConfigurer {
+./spring-websocket/src/main/java/org/springframework/web/socket/config/annotation/WebSocketHandlerRegistration.java:public interface WebSocketHandlerRegistration {
+./spring-websocket/src/main/java/org/springframework/web/socket/config/annotation/WebSocketHandlerRegistry.java:public interface WebSocketHandlerRegistry {
+./spring-websocket/src/main/java/org/springframework/web/socket/config/annotation/WebSocketMessageBrokerConfigurer.java:public interface WebSocketMessageBrokerConfigurer {
+./spring-websocket/src/main/java/org/springframework/web/socket/handler/WebSocketHandlerDecoratorFactory.java:public interface WebSocketHandlerDecoratorFactory {
+./spring-websocket/src/main/java/org/springframework/web/socket/messaging/SubProtocolErrorHandler.java:public interface SubProtocolErrorHandler<P> {
+./spring-websocket/src/main/java/org/springframework/web/socket/messaging/SubProtocolHandler.java:public interface SubProtocolHandler {
+./spring-websocket/src/main/java/org/springframework/web/socket/server/HandshakeHandler.java:public interface HandshakeHandler {
+./spring-websocket/src/main/java/org/springframework/web/socket/server/HandshakeInterceptor.java:public interface HandshakeInterceptor {
+./spring-websocket/src/main/java/org/springframework/web/socket/server/RequestUpgradeStrategy.java:public interface RequestUpgradeStrategy {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/client/InfoReceiver.java:public interface InfoReceiver {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/client/Transport.java:public interface Transport {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/client/TransportRequest.java:public interface TransportRequest {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/client/XhrTransport.java:public interface XhrTransport extends Transport, InfoReceiver {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/frame/SockJsFrameFormat.java:public interface SockJsFrameFormat {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/frame/SockJsMessageCodec.java:public interface SockJsMessageCodec {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/SockJsService.java:public interface SockJsService {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/transport/SockJsServiceConfig.java:public interface SockJsServiceConfig {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/transport/SockJsSession.java:public interface SockJsSession extends WebSocketSession {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/transport/SockJsSessionFactory.java:public interface SockJsSessionFactory {
+./spring-websocket/src/main/java/org/springframework/web/socket/sockjs/transport/TransportHandler.java:public interface TransportHandler {
+./spring-websocket/src/main/java/org/springframework/web/socket/SubProtocolCapable.java:public interface SubProtocolCapable {
+./spring-websocket/src/main/java/org/springframework/web/socket/WebSocketHandler.java:public interface WebSocketHandler {
+./spring-websocket/src/main/java/org/springframework/web/socket/WebSocketMessage.java:public interface WebSocketMessage<T> {
+./spring-websocket/src/main/java/org/springframework/web/socket/WebSocketSession.java:public interface WebSocketSession extends Closeable {
