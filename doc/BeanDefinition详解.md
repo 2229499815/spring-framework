@@ -1,1 +1,0 @@
-BeanDefinition继承至AttributeAccessor、BeanMetadataElement
