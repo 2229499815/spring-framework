@@ -53,8 +53,12 @@ import org.springframework.util.Assert;
  * @see ClassPathBeanDefinitionScanner
  * @see org.springframework.context.support.GenericXmlApplicationContext
  */
+//实现了基于注解配置注册器可配置扫描和手动注册的能力，并继承至GenericApplicationContext被赋予了ApplicationContext的能力
+//在GenericApplicationContext中的空参构造new 了一个DefaultListableBeanFactory，拥有了配置的BeanFactory的能力
+//父类中实现了BeanDefinitionRegistry 有用了注册BeanDefinition的能力
+//也就是说这是一个完整的spring容器了
 public class AnnotationConfigApplicationContext extends GenericApplicationContext implements AnnotationConfigRegistry {
-
+	
 	private final AnnotatedBeanDefinitionReader reader;
 
 	private final ClassPathBeanDefinitionScanner scanner;

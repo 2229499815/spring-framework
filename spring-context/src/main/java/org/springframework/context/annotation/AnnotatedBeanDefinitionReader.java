@@ -68,6 +68,7 @@ public class AnnotatedBeanDefinitionReader {
 	 * @see #setEnvironment(Environment)
 	 */
 	public AnnotatedBeanDefinitionReader(BeanDefinitionRegistry registry) {
+		//在这里首先幂等获取StanderEnvironment环境遍历的容器
 		this(registry, getOrCreateEnvironment(registry));
 	}
 
@@ -84,7 +85,22 @@ public class AnnotatedBeanDefinitionReader {
 		Assert.notNull(registry, "BeanDefinitionRegistry must not be null");
 		Assert.notNull(environment, "Environment must not be null");
 		this.registry = registry;
+		//创建一个条件计算器，用于判断condition相关注解，是否被需要跳过。
+		// 它需要从BeanFactory中获取是否存在bean，
+		// 它需要从classLoader中获取是否存在对应的class
+		// 它需要从resource中获取是否存在对应的resource
+		// 它需要从environment中获取是否存在对应的属性
+		// 所以它的实现中就需要有对应的这些属性
 		this.conditionEvaluator = new ConditionEvaluator(registry, environment, null);
+		//注册一些与基于注解相关的BeanPostProcessor到BeanDefinitionRegistry中共注册了6个相关的BeanDefinition
+		//此处注册的BeanDefinition都是RootBeanDefinition
+		//1.ConfigurationClassPostProcessor        用于启动时处理@Configuration注解的类
+		//2.AutowiredAnnotationBeanPostProcessor   用于处理自动注入注解的
+		//3.CommonAnnotationBeanPostProcessor       jsr-250规范的一些注解
+		//4.PersistenceAnnotationBeanPostProcessor  对jpa注解的支持
+		//5.EventListenerMethodProcessor			事件监听器方法处理
+		//6.DefaultEventListenerFactory				默认的事件监听工程类
+		//这六个类被放入了registry
 		AnnotationConfigUtils.registerAnnotationConfigProcessors(this.registry);
 	}
 
