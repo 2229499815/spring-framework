@@ -76,11 +76,16 @@ final class PostProcessorRegistrationDelegate {
 		Set<String> processedBeans = new HashSet<>();
 
 		if (beanFactory instanceof BeanDefinitionRegistry) {
+			//如果beanFactory实现了BeanDefinitionRegistry接口则转换成registry
 			BeanDefinitionRegistry registry = (BeanDefinitionRegistry) beanFactory;
+			//新建一个临时容器用于存储常规postProcessors
 			List<BeanFactoryPostProcessor> regularPostProcessors = new ArrayList<>();
+			//新建一个临时容器用于存储BeanDefinitionRegistry后置处理器
 			List<BeanDefinitionRegistryPostProcessor> registryProcessors = new ArrayList<>();
-
+			//遍历传进来的beanFactoryPostProcessors,即用户实现的通过applicationContext.addBeanFactoryPostProcessor进来的
 			for (BeanFactoryPostProcessor postProcessor : beanFactoryPostProcessors) {
+				//分拣放到不同的临时容存放，如果是beanDefinitionRegistry的后置处理器就最先调用后置处理，否则就缓存到常规后置处理器中
+				//因为beanDefinitionRegistry后置处理器相当于在BeanDefinition处理完成后执行
 				if (postProcessor instanceof BeanDefinitionRegistryPostProcessor) {
 					BeanDefinitionRegistryPostProcessor registryProcessor =
 							(BeanDefinitionRegistryPostProcessor) postProcessor;
@@ -96,6 +101,8 @@ final class PostProcessorRegistrationDelegate {
 			// uninitialized to let the bean factory post-processors apply to them!
 			// Separate between BeanDefinitionRegistryPostProcessors that implement
 			// PriorityOrdered, Ordered, and the rest.
+			//新建一个临时容器根据名称安排起内置的BeanDefinitionRegistryPostProcessors
+			//具体为ConfigurationClassPostProcessor，是在扫描完成之后放进去的6个beanDefinition中的第一个
 			List<BeanDefinitionRegistryPostProcessor> currentRegistryProcessors = new ArrayList<>();
 
 			// First, invoke the BeanDefinitionRegistryPostProcessors that implement PriorityOrdered.
@@ -107,6 +114,7 @@ final class PostProcessorRegistrationDelegate {
 					processedBeans.add(ppName);
 				}
 			}
+			//执行对应的postProccessos
 			sortPostProcessors(currentRegistryProcessors, beanFactory);
 			registryProcessors.addAll(currentRegistryProcessors);
 			invokeBeanDefinitionRegistryPostProcessors(currentRegistryProcessors, registry, beanFactory.getApplicationStartup());
