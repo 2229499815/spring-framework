@@ -114,7 +114,8 @@ final class PostProcessorRegistrationDelegate {
 					processedBeans.add(ppName);
 				}
 			}
-			//执行对应的postProccessos
+			//按照PriorityOrdered值升序排列，然后遍历执行，ConfigurationClassPostProcessor 优先级最低
+			//ConfigurationClassPostProcessor这里的逻辑实际上就是去处理@Configuration类拿出@Bean注解生成对应的BeanDefinition
 			sortPostProcessors(currentRegistryProcessors, beanFactory);
 			registryProcessors.addAll(currentRegistryProcessors);
 			invokeBeanDefinitionRegistryPostProcessors(currentRegistryProcessors, registry, beanFactory.getApplicationStartup());

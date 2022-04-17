@@ -62,7 +62,7 @@ ListableBeanFactory (org.springframework.beans.factory)
 顶层的BeanFactory做的最主要的一个功能就是提供了各种getBean的方法，以及一些辅助判断的方法，这通常对于普通使用框架的人来说已经够用了
 这就直接屏蔽了框架内部的复杂度。基于顶层的BeanFactory，做了层层继承或实现，进行了一系列的扩展。每个扩展的职责也很明确。
 + HierarchicalBeanFactory 分层次的BeanFactory，也就是父子容器的概念，子容器可以访问父容器的bean，父容器不能访问子容器的Bean
-相当于对容器做了一定的隔离，具体目的我也不是很清楚。但是在springboot中已经抛弃了这个设计。
+相当于对容器做了一定的隔离。
 + SimpleJndiBeanFactory JNDI相关的一些Bean，也就是用于获取通过jndi进行配置的一些bean，比如你如果把数据源的连接配置在tomcat中
 就可以通过这种方法拿到到tomcat中的连接，作为spring的bean。但是现在这种方式也很少人使用了，所以也不用去管他
 + AutowireCapableBeanFactory <font color=red>重点</font>具有自动注入能力的BeanFactory，也就是用于解析Autowire注解的
